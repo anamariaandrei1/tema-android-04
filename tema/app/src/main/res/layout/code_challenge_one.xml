@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/lightYellow"
+	android:layout_marginTop="@dimen/eight">
+
+	<ImageView
+		android:id="@+id/imageOne"
+		android:layout_alignParentLeft="true"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:src="@drawable/android_1"/>
+	<ImageView
+		android:id="@+id/imageTwo"
+		android:layout_alignBaseline="@+id/imageOne"
+		android:layout_alignParentRight="true"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:src="@drawable/android_2"
+		android:layout_marginBottom="@dimen/eight"
+		/>
+	<View
+		android:id="@+id/view"
+		android:layout_below="@id/imageTwo"
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/two"
+		android:background="@color/darkGreen"/>
+	<FrameLayout
+		android:layout_below="@id/view"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:background="@color/lightGreen"/>
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_margin="@dimen/sixteen"
+			android:background="@color/darkGreenB"/>
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_margin="@dimen/thirtyTwo"
+			android:background="@color/pink"/>
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_margin="@dimen/fortyEight"
+			android:background="@color/lightYellow"/>
+		<ImageView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:src="@drawable/android_3"
+			android:layout_gravity="center" />
+	</FrameLayout>
+
+
+
+</RelativeLayout>
